@@ -32,7 +32,12 @@
         <section class="containerPrincipal p-3 m-3">
           <h1 class="fw-bold tituloCronometro">ACTIVE TIME REMAINING</h1>
           <div class="containerCronometro">
-            <div id="cronometro" class="tiempoEstilo">00:00:00</div>
+            <div class="tiempoEstilo">
+              <label for="tiempo">Tiempo (segundos): </label>
+              <input type="number" id="tiempo" min="1" value="60" />
+            </div>
+
+            <div id="temporizador" class="tiempoEstilo">00:00:00</div>
             <div id="botones" class="d-flex justify-content-center">
               <button
                 id="iniciar"
