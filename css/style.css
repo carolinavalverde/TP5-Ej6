@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@font-face {
+  font-family: "DS Digital";
+  src: url("../fonts/DS-DIGIB.TTF") format("truetype");
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.cronometroEstilo {
+  background-image: linear-gradient(
+    43deg,
+    #f0ac40 0%,
+    #f7ea91 17%,
+    #d2d66c 39%,
+    #58e4a8 60%,
+    #74b7e6 80%,
+    #b48ed8 100%
+  );
+  border: 6px solid orange;
+}
+
+.containerPrincipal {
+  background-color: black;
+  border: 6px solid orange;
+  color: orange;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.containerCronometro {
+  font-family: "DS Digital", sans-serif;
+  color: orange;
+  text-align: center;
+}
+
+.tituloCronometro {
+  color: orange;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+}
+
+.tiempoEstilo {
+  font-size: 5rem;
+}
+
+.cardEstilo {
+  background-color: black;
+  border: 4px solid orange;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.5rem;
+  color: orange;
+  text-align: center;
+  width: 5.5rem;
+  height: 4.5rem;
+}
+
+.pulseBoton {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.pulseBoton:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+
+.botonIniciar {
+  background-color: rgb(96, 96, 245);
+  color: white;
+}
+
+.botonPusar {
+  background-color: rgb(249, 92, 40);
+  color: white;
+}
+
+.botonReiniciar {
+  background-color: rgb(77, 147, 64);
+  color: white;
+}
+
+@media screen and (max-width: 575.9px) {
+  .tituloCronometro {
+    font-size: 0.8rem;
+  }
+
+  .tiempoEstilo {
+    font-size: 2rem;
+  }
+
+  .cardEstilo {
+    width: 15%;
+    height: 5%;
+  }
+
+  .textoCardSm {
+    font-size: 0.4rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.9px) {
+  .tituloCronometro {
+    font-size: 1rem;
+  }
+
+  .tiempoEstilo {
+    font-size: 4rem;
+  }
+
+  .cardEstilo {
+    font-size: 0.3rem;
+    width: 5.5rem;
+    height: 4.2rem;
+  }
+}
